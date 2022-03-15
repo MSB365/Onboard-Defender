@@ -86,7 +86,7 @@ Start-Sleep -s 2
 
 Write-Host "Expanding ZIP file in $directory1..." -ForegroundColor Cyan
 Start-Sleep -s 2
-IF ((Test-Path -Path $directory1\WindowsDefenderATPOnboardingPackage.Zip) -eq $false)
+IF ((Test-Path -Path $directory1\WindowsDefenderATPOnboardingPackage.cmd) -eq $false)
 {
         Expand-Archive -LiteralPath $directory1\WindowsDefenderATPOnboardingPackage.Zip -DestinationPath $directory1
         Start-Sleep -s 2
